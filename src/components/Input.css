@@ -1,0 +1,9 @@
+.Input {
+    border: 2px green solid;
+}
+
+.Input-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
