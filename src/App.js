@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Input from './components/Input';
 import Todo from './components/Todo';
+import Filters from './components/Filters';
 
 function App() {
   const [todoValue, setTodoValue] = useState('');
@@ -29,6 +30,8 @@ function App() {
           return <Todo title={todo} />;
         })}
       </div>
+
+      <Filters />
     </div>
   );
 }

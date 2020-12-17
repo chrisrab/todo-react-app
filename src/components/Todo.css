@@ -2,3 +2,7 @@
   border-bottom: 1px solid pink;
   font-weight: bold;
 }
+
+.todo-checked {
+  text-decoration: line-through;
+}
