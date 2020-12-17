@@ -1,10 +1,16 @@
 import './Input.css';
 
-function Input() {
+function Input({ onChange, inputValue }) {
   return (
     <div className="Input-container">
       <label>add-todo</label>
-      <input className="Input" />
+      <input
+        value={inputValue}
+        className="Input"
+        onChange={(event) => {
+          onChange(event.target.value);
+        }}
+      />
     </div>
   );
 }
